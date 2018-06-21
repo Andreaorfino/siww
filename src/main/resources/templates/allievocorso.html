@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head><title>Scegli attivita'</title></head>
+
+<body>
+
+<center>
+<h1>Scegli attivita'</h1>
+        <h2 th:text="${errore}"></h2>
+
+		<div>
+			<table>
+				<tr th:each="att : ${attivita}">
+					<td><a th:href="@{'/CollegaAllievoAttivita' + '/' + ${att.key}}"><span th:text="${att.value}"></span></a></td>					
+                </tr>
+            </table>
+   		</div>
+
+
+</form>
+
+</center>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Allievi</title>
+</head>
+<body>
+	<center>
+
+		<table border="1">
+
+			<tr th:each="x:${allievi}">
+			
+				<td width="50" height="50" th:text="${x.username}"> </td>
+				<td width="50" height="50" th:text="${x.password}"> </td>
+				<td width="50" height="50" th:text="${x.ruolo}"> </td>
+				<td width="50" height="50" th:text="${x.nome}"> </td>
+				<td width="50" height="50" th:text="${x.cognome}"> </td>
+				<td width="50" height="50" th:text="${x.mail}"> </td>
+				<td width="50" height="50" th:text="${x.luogo}"> </td> 
+				<td width="50" height="50" th:text="${x.dataNascita}"> </td>
+			
+			</tr>
+
+		</table>
+
+	</center>
+</body>
+</html>

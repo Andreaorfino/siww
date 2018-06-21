@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns: th = "http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+Guitar Template is provided by www.tooplate.com
+-->
+<title>Corsi sulla Sicurezza</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
+<link href="css/coda-slider.css" rel="stylesheet" type="text/css" charset="utf-8" />
+
+<script src="js/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="js/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+	
+    <div id="slider">
+    <div id="tooplate_wrapper">
+    	
+        <div id="tooplate_sidebar">
+        
+            <div id="header">
+                
+            </div>    
+			
+            
+		</div> <!-- end of sidebar -->
+    
+        <div id="content">
+            <div class="scroll">
+                <div class="scrollContainer">
+                
+                    <div class="panel" id="home">
+                    	<div class="content_section">
+                            <h2><i><b>E.M.M.A. Academy</b></i></h2>    
+                            
+                            <img src="Roma.jpg" alt="Image 01" class="image_wrapper image_fl" />
+                            
+                            <p><em>E.M.M.A. Academy è una società di consulenza e di formazione che assiste i suoi clienti privati e pubblici 
+							nell'integrazione di nuove competenze alla cultura aziendale.</em></p>	
+                         </div>
+                         <div class="content_section last_section">   
+                         	<h2><i><b>Perché sceglierci?</b></i></h2>
+                                <p>I nostri corsi non si limitano a fornire mere informazioni didattiche, ma,
+								accompagnando la teoria alla pratica, preparano gli allievi ad una reale crescita professionale
+								fondata su basi concrete.</p>
+								
+						</div>
+                    </div> <!-- end of home -->
+                    
+                    <div class="panel" id="about">
+                    	<div class="content_section">
+                            <h1><I><B>Chi siamo</B></I></h1>
+                            <p><em>E.M.M.A. Academy nasce nel 2012 proponendo corsi di Lingue (Trinity per tutti i livelli
+							di conoscenza dell'inglese e corsi con certificazione di tedesco, francese, spagnolo e italiano per stranieri)
+							e di Informatica (siamo centro accreditato AICA per il rilascio della Patente Europea del Computer).
+							Nel 2015 abbiamo allargato la sfera lavorativa orientandoci verso il mondo della Sicurezza nei Luoghi di Lavoro. </em></p>
+							<p>L’obiettivo primario dei nostri corsi è formare allievi offrendo al mercato articoli e servizi che rispecchino standard qualitativi
+							   nettamente superiori alla concorrenza nazionale, rispondendo al contempo alle esigenze delle società e del pubblico.
+                            
+                            
+						</div>
+                        <div class="content_section last_section">
+                            <blockquote>
+                            <p>Dal 2013 accreditata con la Regione Lazio per i corsi per la formazione continua</p>
+                            <img src="laziologo.jpg" alt="Image 02" class="image_wrapper image_fl" />
+							</blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" id="services">
+                        <center><h2><I><B>Corsi di Informatica</B></I></h2></center>
+                        <p><em></em></p>
+                        
+                        <p></p>
+                        <div class="cleaner_h20"></div>
+                       <h3><center><table border="1">
+					   <tr>
+					   <td>Nome</td>
+					   <td>Data</td>
+					   <td>Ora</td>
+					   <td>Centro</td>
+					   <td>Città</td>
+					   </tr>
+					   <tr th:each"x:${attivita}">
+					   <td th:text="${x.nome}"></td>
+					   <td th:text="${x.data}"></td>
+					   <td th:text="${x.ora}"></td>
+					   <td th:text="${x.centro}"></td>
+					   <td th:text="${x.citta}"></td>
+					   </tr>
+					   </table></center></h3>
+                    </div>                    
+                        <div class="col_380 float_r">
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- end of scroll -->
+        </div>
+        <div class="cleaner"></div>
+    </div> <!-- end of content -->
+    <div class="cleaner"></div>
+</div>
+
+<div id="footer">
+    
+        <div id="social_box">
+            <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="images/flickr.png" alt="flickr" /></a>
+            <a href="#"><img src="images/myspace.png" alt="myspace" /></a>
+            <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+        </div>
+    
+    
+		
+</div>
+
+</body>
+</html>

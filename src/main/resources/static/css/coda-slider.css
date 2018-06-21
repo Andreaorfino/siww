@@ -1,0 +1,135 @@
+#slider {
+    position: relative;
+	width: 100%;
+}
+
+#tooplate_wrapper {  /*Sfondo interno*/
+	width: 840px;
+	padding: 40px 20px;
+	margin: 0 auto;
+	background: url(../images/sfondo4.jpg) repeat top center
+}
+
+#tooplate_sidebar {
+	float: left;	
+	width: 240px;
+	padding-top: 20px
+}
+
+#header {
+	width: 240px;
+	text-align: left;
+	margin-bottom: 20px
+}
+
+#header h1 { 
+	margin: 0; 
+	padding: 0; 
+	height: 60px; 
+	display: block; 
+	text-indent: 0px; 
+}
+
+#menu {  /*menù laterale*/
+	clear: both;
+	width: 200px;
+	height: 240px;
+	padding: 20px;
+	background: url(../images/tooplate_menu.png) no-repeat
+}
+
+#content {  /*contenuto vero e proprio*/
+	float: right;
+	width: 568px;
+	height: 700px;	
+	background: url(../images/tooplate_content.png) no-repeat
+}
+
+.content_section {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #666
+}
+
+.last_section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#footer {
+	clear: both;
+	width: 840px;
+	padding: 0 0 30px;
+	margin: 0 auto;
+	text-align: right
+}
+
+#footer a {
+	color: #000;
+}
+
+#social_box {
+	height: 85px;
+	padding: 0;
+	text-align: right;
+}
+
+#social_box a {
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px; height: 60px;
+}
+
+.scroll {
+    height: 478px;
+    width: 488px;
+	margin: 44px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+}
+
+.scrollContainer div.panel {
+    height: 478px;
+    width: 488px;
+	overflow: hidden;
+}
+
+ul.navigation {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.navigation li {
+    display: inline;
+    margin: 0;
+	padding: 0;
+}
+
+ul.navigation a {
+	display: block;
+	padding: 0 0 6px 0;
+	margin: 0 0 15px 0;
+	border-bottom: 1px dashed #666;
+	color: #666;  /*colore menù*/
+	font-size: 18px;
+	font-weight: 400;
+    text-decoration: none;
+	font-family: Georgia, "Arial", Times, serif;	
+}
+
+ul.navigation a:hover, ul.navigation a.selected {
+	color: 	#4b0082;  /*evidenzia colore menù laterale*/
+	padding-left: 10px;
+}
+
+ul.navigation a:focus {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}

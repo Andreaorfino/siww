@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<form action="/nuovoutente" method="get">
+nome<input type="text" name="nome"> 
+cognome <input type="text" name="cognome">
+password <input type="password" name="password">
+conferma password <input type="password" name="confermapassword">
+<input type="submit" value="ok">
+
+<form th:action="@{/logout}" method="post">
+	<input type="submit" value="Log Out" />
+</form>
+
+
+</form></body></html>

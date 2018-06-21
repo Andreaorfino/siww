@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<br>
+	<br>
+
+	<center>
+		<h2>ALLIEVI</h2>
+		<table border=1>
+			<tr>
+				<td align="center">NOME</td>
+				<td align="center">COGNOME</td>
+				<td align="center">LUOGO NASCITA</td>
+				<td align="center">DATA NASCITA</td>
+				<td align="center">E-MAIL</td>
+			</tr>
+			<tr th:each="allievi : ${allievi}">
+				<td th:text="${allievi.nome}" width="80" height="80"></td>
+				<td th:text="${allievi.cognome}" width="80" height="80"></td>
+				<td th:text="${allievi.luogo_nascita}" width="80" height="80"></td>
+				<td th:text="${allievi.data_nascita}" width="80" height="80"></td>
+				<td th:text="${allievi.mail}" width="80" height="80"></td>
+			</tr>
+		</table>
+
+		<br>
+
+		<h2>ATTIVITA</h2>
+		<table border=1>
+			<tr>
+				<td align="center">NOME</td>
+				<td align="center">DATA</td>
+				<td align="center">ORA</td>
+			</tr>
+			<tr th:each="attivita : ${attivita}">
+				<td th:text="${attivita.nome}" width="80" height="80"></td>
+				<td th:text="${attivita.data}" width="80" height="80"></td>
+				<td th:text="${attivita.ora}" width="80" height="80"></td>
+			</tr>
+		</table>
+		
+				<h2>CENTRI</h2>
+		<table border=1>
+			<tr>
+				<td align="center">NOME</td>
+				<td align="center">E-MAIL</td>
+				<td align="center">TELEFONO</td>
+				<td align="center">MAX ALLIEVI</td>
+			</tr>
+			<tr th:each="centri : ${centri}">
+				<td th:text="${centri.nome}" width="80" height="80"></td>
+				<td th:text="${centri.email}" width="80" height="80"></td>
+				<td th:text="${centri.telefono}" width="80" height="80"></td>
+				<td th:text="${centri.max_alievi}" width="80" height="80"></td>
+			</tr>
+		</table>
+		
+		
+
+	</center>
+	
+	<form th:action="@{/logout}" method="post">
+	<input type="submit" value="Log Out" />
+</form>
+	
+</body>
+</html>
